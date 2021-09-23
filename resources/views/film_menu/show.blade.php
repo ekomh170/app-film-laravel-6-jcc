@@ -16,6 +16,7 @@ Detail film
             <h4 class="card-text"><b>ID film</b> : {{ $film->id }}</h4>
             <hr style="width:75%">
             <h6 class="card-text text-left"><b>Nama Film</b> : {{ $film->judul }}</h6>
+            <h6 class="card-text text-left"><b>Nama Film</b> : {{ $film->genre->nama }}</h6>
             <h6 class="card-text text-left"><b>Umur</b> : {{ $film->tahun }}</h6>
             <p class="card-text text-left"><b>Bio</b> : {{ $film->ringkasan }}</p>
             <a href="../film" class="btn btn-outline-dark">Kembali</a>

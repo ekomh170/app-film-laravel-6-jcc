@@ -19,7 +19,7 @@ Data film
             <th>Judul</th>
             <th>Ringkasan</th>
             <th>Tahun</th>
-            {{-- <th>Genre</th> --}}
+            <th>Genre</th>
             <th>Aksi</th>
         </tr>
     </thead>
@@ -30,7 +30,7 @@ Data film
             <td>{{ $data->judul }}</td>
             <td>{{ $data->ringkasan }}</td>
             <td>{{ $data->tahun }}</td>
-            {{-- <td>{{ $data->genre_id }}</td> --}}
+            <td>{{ $data->genre->nama }}</td>
             <td>
                 <a href="/film/{{$data->id}}" class="btn btn-outline-info"><i class="fas fa-eye"></i></a>
                 @auth

@@ -17,6 +17,7 @@ Data genre
         <tr>
             <th style="width: 10px">No</th>
             <th>Nama</th>
+            <th>List Film</th>
         </tr>
     </thead>
     <tbody>
@@ -24,6 +25,13 @@ Data genre
         <tr>
             <td>{{ $key + 1 }}</td>
             <td>{{ $data->nama }}</td>
+            <td>
+                <ul>
+                    @foreach ($data->film as $item)
+                    <li>{{ $item->judul }}</li>
+                    @endforeach
+                </ul>
+            </td>
             <td>
                 <a href="/genre/{{$data->id}}" class="btn btn-outline-info"><i class="fas fa-eye"></i></a>
                 @auth

@@ -59,6 +59,14 @@
                                     </p>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a href="/peran" class="nav-link">
+                                    <i class="nav-icon fas fa-user"></i>
+                                    <p>
+                                        Peran
+                                    </p>
+                                </a>
+                            </li>
                             @auth
                             <li class="nav-item">
                                 <a href="/profile" class="nav-link">
@@ -132,4 +140,3 @@
         </div>
     </div>
 </section>
-
