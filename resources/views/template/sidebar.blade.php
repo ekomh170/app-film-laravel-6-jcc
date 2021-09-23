@@ -21,7 +21,7 @@
                         </div>
                         <div class="info">
                             @auth
-                            <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+                            <a href="#" class="d-block">{{ Auth::user()->name }} ({{ Auth::user()->profile->umur }})</a>
                             @endauth
                             @guest
                             <a href="/login" class="btn btn-outline-danger bg-danger">Login!!</a>
@@ -41,17 +41,37 @@
                                     </p>
                                 </a>
                             </li>
+                            @auth
+                            <li class="nav-item">
+                                <a href="/profile/show" class="nav-link">
+                                    <i class="nav-icon fas fa-cog"></i>
+                                    <p>
+                                        Profile
+                                    </p>
+                                </a>
+                            </li>
+                            @endauth
                             <li class="nav-item">
                                 <a href="/cast" class="nav-link">
-                                    <i class="nav-icon fas fa-table"></i>
+                                    <i class="nav-icon fas fa-user"></i>
                                     <p>
                                         Cast
                                     </p>
                                 </a>
                             </li>
+                            @auth
+                            <li class="nav-item">
+                                <a href="/profile" class="nav-link">
+                                    <i class="nav-icon fas fa-user"></i>
+                                    <p>
+                                        User
+                                    </p>
+                                </a>
+                            </li>
+                            @endauth
                             <li class="nav-item">
                                 <a href="/film" class="nav-link">
-                                    <i class="nav-icon fas fa-table"></i>
+                                    <i class="nav-icon fas fa-film"></i>
                                     <p>
                                         Film
                                     </p>
@@ -65,6 +85,29 @@
                                         Genre
                                     </p>
                                 </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-table"></i>
+                                    <p>
+                                        Data Table
+                                        <i class="fas fa-angle-left right"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a href="/table" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Table</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="/data-tables" class="nav-link">
+                                            <i class="far fa-circle nav-icon"></i>
+                                            <p>Data-Table</p>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -89,3 +132,4 @@
         </div>
     </div>
 </section>
+

@@ -14,14 +14,15 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 // Route Tidak Terpakai
-// Route::get('/table', function () {
-//     return view('table');
-// });
-// Route::get('/data-tables', function () {
-//     return view('data_tables');
-// });
 // Route::get('/home', 'HomeController@index')->name('home');
 // Route Tidak Terpakai
+
+Route::get('/table', function () {
+    return view('table');
+});
+Route::get('/data-tables', function () {
+    return view('data_tables');
+});
 
 Auth::routes();
 
@@ -37,4 +38,5 @@ Route::group(['middleware' => ['web']], function () {
     Route::resource('cast', 'CastController');
     Route::resource('film', 'FilmController');
     Route::resource('genre', 'GenreController');
+    Route::resource('profile', 'ProfileController')->only(['index', 'update', 'show']);
 });

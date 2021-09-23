@@ -5,6 +5,9 @@
 @section('judul')
 | Data Tables
 @endsection
+@section('judul_sub')
+Data Tables
+@endsection
 @section('content')
 {{-- <div class="card">
     <div class="card-header">

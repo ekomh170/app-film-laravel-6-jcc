@@ -5,6 +5,9 @@
 @section('judul')
 | Table
 @endsection
+@section('judul_sub')
+Table
+@endsection
 @section('content')
 <table id="example1" class="table table-bordered">
     <thead>

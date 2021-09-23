@@ -72,7 +72,6 @@
         <div class="top-right links">
             <a href="{{ url('dashboard') }}">Halaman Utama</a>
             @auth
-            <a href="{{ url('/dashboard') }}">Halaman Utama</a>
             @else
             <a href="{{ route('login') }}">Login</a>
 
