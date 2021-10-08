@@ -14,7 +14,7 @@ Edit Data Menu Cast
         @csrf
         @method('PUT')
         <div class="form-group">
-            <label for="nama">Nama</label>
+            <label for="nama">Nama</label>  
             <input type="text" class="form-control" name="nama" value="{{$cast->nama}}" id="nama"
                 placeholder="Masukkan Nama">
             @error('nama')

@@ -46,7 +46,7 @@ Tambah Data Menu Film
             <option value="{{ $item->id }}">{{ $item->nama }}</option>
             @endforeach
         </select>
-        @error('tahun')
+        @error('genre')
         <div class="alert alert-danger">
             {{ $message }}
         </div>

@@ -38,5 +38,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::resource('cast', 'CastController');
     Route::resource('film', 'FilmController');
     Route::resource('genre', 'GenreController');
+    Route::resource('peran', 'PeranController');
     Route::resource('profile', 'ProfileController')->only(['index', 'update', 'show']);
 });

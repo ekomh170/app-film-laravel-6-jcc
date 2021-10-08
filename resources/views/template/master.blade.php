@@ -17,10 +17,10 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     @stack('style')
+    @include('sweet::alert')
 </head>
 
 <body class="hold-transition sidebar-mini">
-    @include('sweet::alert')
     <!-- Site wrapper -->
     <div class="wrapper">
         @include('template.navbar')

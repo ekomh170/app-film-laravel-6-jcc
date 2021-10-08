@@ -43,7 +43,7 @@
                             </li>
                             @auth
                             <li class="nav-item">
-                                <a href="/profile/show" class="nav-link">
+                                <a href="/profile/" class="nav-link">
                                     <i class="nav-icon fas fa-cog"></i>
                                     <p>
                                         Profile
@@ -69,7 +69,7 @@
                             </li>
                             @auth
                             <li class="nav-item">
-                                <a href="/profile" class="nav-link">
+                                <a href="/profile/show" class="nav-link">
                                     <i class="nav-icon fas fa-user"></i>
                                     <p>
                                         User
