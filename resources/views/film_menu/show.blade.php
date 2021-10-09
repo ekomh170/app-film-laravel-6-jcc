@@ -14,11 +14,18 @@ Detail film
             alt="Card image">
         <div class="card-body">
             <h4 class="card-text"><b>ID film</b> : {{ $film->id }}</h4>
+
             <hr style="width:75%">
-            <h6 class="card-text text-left"><b>Nama Film</b> : {{ $film->judul }}</h6>
-            <h6 class="card-text text-left"><b>Nama Film</b> : {{ $film->genre->nama }}</h6>
-            <h6 class="card-text text-left"><b>Umur</b> : {{ $film->tahun }}</h6>
-            <p class="card-text text-left"><b>Bio</b> : {{ $film->ringkasan }}</p>
+            <h6 class="card-text text-left"><b>Judul Film</b> : {{ $film->judul }}</h6>
+            <h6 class="card-text text-left"><b>Genre Film</b> : {{ $film->genre->nama }}</h6>
+            <h6 class="card-text text-left"><b>Tahun Terbit</b> : {{ $film->tahun }}</h6>
+            <p class="card-text text-left"><b>Ringkasan Film</b> : {{ $film->ringkasan }}</p>
+            <h4 class="card-text"><b>List Cast</b> : {{ $film->id }}</h4>
+            <ul>
+                @foreach ($film->peran as $item)
+                <li>{{ $item->cast->nama  }} | {{ $item->nama }}</li>
+                @endforeach
+            </ul>
             <a href="../film" class="btn btn-outline-dark">Kembali</a>
         </div>
     </div>

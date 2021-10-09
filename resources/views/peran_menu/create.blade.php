@@ -40,7 +40,7 @@ Tambah Data Menu Peran
     </div>
     <div class="form-group">
         <label for="nama">Nama Peran</label>
-        <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukkan Nama Persan">
+        <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukkan Nama Peran">
         @error('nama')
         <div class="alert alert-danger">
             {{ $message }}

@@ -18,6 +18,7 @@ Data Cast
             <th style="width: 10px">No</th>
             <th>Nama</th>
             <th>Umur</th>
+            <th>List Film</th>
             <th>Menu Access</th>
         </tr>
     </thead>
@@ -27,6 +28,13 @@ Data Cast
             <td>{{ $key + 1 }}</td>
             <td>{{ $data->nama }}</td>
             <td>{{ $data->umur }}</td>
+            <td>
+                <ul>
+                    @foreach ($data->peran as $item)
+                    <li> {{ $item->film->judul }}</li>
+                    @endforeach
+                </ul>
+            </td>
             <td>
                 <a href="/cast/{{$data->id}}" class="btn btn-outline-info"><i class="fas fa-eye"></i></a>
                 @auth

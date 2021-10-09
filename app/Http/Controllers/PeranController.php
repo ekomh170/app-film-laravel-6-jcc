@@ -74,7 +74,7 @@ class PeranController extends Controller
      */
     public function edit($id)
     {
-        $peran = peran::find($id);
+        $peran = Peran::find($id);
         $film = Film::all();
         $cast = Cast::all();
         return view('peran_menu.edit', compact('peran', 'film', 'cast'));
@@ -102,7 +102,7 @@ class PeranController extends Controller
         $peran->nama = $request->nama;
         $peran->update();
 
-        alert()->success('Berhasil Mengubah Data peran', 'Data peran');
+        alert()->success('Berhasil Mengubah Data Peran', 'Data peran');
         return redirect('/peran');
     }
 

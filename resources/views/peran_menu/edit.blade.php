@@ -13,17 +13,17 @@ Edit Data Menu Peran
     @csrf
     @method('PUT') <div class="form-group">
         <label for="film">Nama Film</label>
-        <select class="custom-select" name="genre_id" id="genre_id">
-            <option selected>-- Pilih Menu Genre Film --</option>
+        <select class="custom-select" name="film_id" id="film_id">
+            <option selected>-- Pilih Menu Film --</option>
             @foreach ($film as $item)
             @if ($item->id === $peran->film_id )
-            <option value="{{ $item->film_id }}" selected>{{ $item->nama }}</option>
+            <option value="{{ $item->id }}" selected>{{ $item->judul }}</option>
             @else
-            <option value="{{ $item->id }}">{{ $item->nama }}</option>
+            <option value="{{ $item->id }}">{{ $item->judul }}</option>
             @endif
             @endforeach
         </select>
-        @error('tahun')
+        @error('film_id')
         <div class="alert alert-danger">
             {{ $message }}
         </div>
@@ -32,12 +32,16 @@ Edit Data Menu Peran
     <div class="form-group">
         <label for="cast">Cast</label>
         <select class="custom-select" name="cast_id" id="cast_id">
-            <option selected>-- Pilih Cast --</option>
+            <option selected>-- Pilih Menu Cast --</option>
             @foreach ($cast as $item)
+            @if ($item->id === $peran->cast_id )
+            <option value="{{ $item->id }}" selected>{{ $item->nama }}</option>
+            @else
             <option value="{{ $item->id }}">{{ $item->nama }}</option>
+            @endif
             @endforeach
         </select>
-        @error('tahun')
+        @error('cast_id')
         <div class="alert alert-danger">
             {{ $message }}
         </div>
@@ -45,7 +49,8 @@ Edit Data Menu Peran
     </div>
     <div class="form-group">
         <label for="nama">Nama Peran</label>
-        <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukkan Nama Persan">
+        <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukkan Nama Peran"
+            value="{{ $peran->nama }}">
         @error('nama')
         <div class="alert alert-danger">
             {{ $message }}
@@ -54,5 +59,5 @@ Edit Data Menu Peran
     </div>
     <button type="submit" class="btn btn-primary">Edit</button>
 </form>
-<a href="../peran/"><button class="btn btn-danger mt-3">Kembali</button></a>
+<a href="../../peran/"><button class="btn btn-danger mt-3">Kembali</button></a>
 @endsection

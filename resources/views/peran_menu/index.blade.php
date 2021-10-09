@@ -30,7 +30,7 @@ Data Peran
             <td>{{ $data->film->judul }}</td>
             <td>{{ $data->nama }}</td>
             <td>
-                <a href="/peran/{{$data->id}}" class="btn btn-outline-info"><i class="fas fa-eye"></i></a>
+                {{-- <a href="/peran/{{$data->id}}" class="btn btn-outline-info"><i class="fas fa-eye"></i></a> --}}
                 @auth
                 <a href="/peran/{{$data->id}}/edit" class="btn btn-outline-primary"><i class="far fa-edit"></i></a>
                 <form action="/peran/{{$data->id}}" method="POST">
@@ -46,4 +46,3 @@ Data Peran
     </tbody>
 </table>
 @endsection
-
