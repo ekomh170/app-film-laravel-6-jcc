@@ -43,10 +43,28 @@
                             </li>
                             @auth
                             <li class="nav-item">
+                                <a href="/profile/show" class="nav-link">
+                                    <i class="nav-icon fas fa-user"></i>
+                                    <p>
+                                        Data Lengkap Profile
+                                    </p>
+                                </a>
+                            </li>
+                            @endauth
+                            @auth
+                            <li class="nav-item">
                                 <a href="/profile/" class="nav-link">
                                     <i class="nav-icon fas fa-cog"></i>
                                     <p>
-                                        Profile
+                                        Edit Profile
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-users"></i>
+                                    <p>
+                                        Data Pengguna Apps
                                     </p>
                                 </a>
                             </li>
@@ -55,7 +73,7 @@
                                 <a href="/cast" class="nav-link">
                                     <i class="nav-icon fas fa-user"></i>
                                     <p>
-                                        Cast
+                                        Data Menu Cast
                                     </p>
                                 </a>
                             </li>
@@ -63,25 +81,15 @@
                                 <a href="/peran" class="nav-link">
                                     <i class="nav-icon fas fa-user"></i>
                                     <p>
-                                        Peran
+                                        Data Menu Peran
                                     </p>
                                 </a>
                             </li>
-                            @auth
-                            <li class="nav-item">
-                                <a href="/profile/show" class="nav-link">
-                                    <i class="nav-icon fas fa-user"></i>
-                                    <p>
-                                        User
-                                    </p>
-                                </a>
-                            </li>
-                            @endauth
                             <li class="nav-item">
                                 <a href="/film" class="nav-link">
                                     <i class="nav-icon fas fa-film"></i>
                                     <p>
-                                        Film
+                                        Data Menu Film
                                     </p>
                                 </a>
                             </li>
@@ -90,7 +98,7 @@
                                 <a href="/genre" class="nav-link">
                                     <i class="nav-icon fas fa-table"></i>
                                     <p>
-                                        Genre
+                                        Data Menu Genre
                                     </p>
                                 </a>
                             </li>

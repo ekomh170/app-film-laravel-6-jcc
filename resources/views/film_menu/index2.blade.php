@@ -10,7 +10,7 @@ Data film
 <a href="/film/create"><button type="button" class="btn btn-outline-success"><i
             class="fas fa-plus-square"></i></button></a>
 @endauth
-<a href="/film/index"><button type="button" class="btn btn-outline-warning"><i class="fas fa-eye"></i></button></a>
+<a href="/film/index2"><button type="button" class="btn btn-outline-warning"><i class="fas fa-eye"></i></button></a>
 <div class="h2 mb-3 text-center">Data film</div>
 <hr style="width:75%">
 <table id="example1" class="table table-bordered mt-3 text-center">

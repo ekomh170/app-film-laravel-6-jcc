@@ -23,6 +23,12 @@ class FilmController extends Controller
         return view('film_menu.index', compact('film'));
     }
 
+    public function index2()
+    {
+        $film = Film::all();
+        return view('film_menu.index2', compact('film'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -76,6 +82,12 @@ class FilmController extends Controller
     {
         $film = Film::find($id);
         return view('film_menu.show', compact('film'));
+    }
+
+    public function show2($id)
+    {
+        $film = Film::find($id);
+        return view('film_menu.show2', compact('film'));
     }
 
     /**
