@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Genre;
 use Illuminate\Http\Request;
+use UxWeb\SweetAlert\SweetAlert;
 
 class GenreController extends Controller
 {

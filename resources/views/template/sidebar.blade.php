@@ -18,14 +18,14 @@
                         <div class="image">
                             <img src="{{ asset('/adminlte') }}/dist/img/avatar.png" class="img-circle elevation-2"
                                 alt="User Image">
+                            @guest
+                            <a href="/login" class="btn btn-outline-danger">Login!!</a>
+                            @endguest
                         </div>
                         <div class="info">
                             @auth
                             <a href="#" class="d-block">{{ Auth::user()->name }} ({{ Auth::user()->profile->umur }})</a>
                             @endauth
-                            @guest
-                            <a href="/login" class="btn btn-outline-danger bg-danger">Login!!</a>
-                            @endguest
                         </div>
                     </div>
 
@@ -93,7 +93,6 @@
                                     </p>
                                 </a>
                             </li>
-                            @auth
                             <li class="nav-item">
                                 <a href="/genre" class="nav-link">
                                     <i class="nav-icon fas fa-table"></i>
@@ -102,6 +101,8 @@
                                     </p>
                                 </a>
                             </li>
+                            @auth
+
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fas fa-table"></i>

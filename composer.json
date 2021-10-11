@@ -9,9 +9,12 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5|^8.0",
+        "barryvdh/laravel-dompdf": "^0.9.0",
         "fideloper/proxy": "^4.4",
         "laravel/framework": "^6.20.26",
         "laravel/tinker": "^2.5",
+        "maatwebsite/excel": "^3.1",
+        "unisharp/laravel-filemanager": "^2.2",
         "uxweb/sweet-alert": "^2.0"
     },
     "require-dev": {

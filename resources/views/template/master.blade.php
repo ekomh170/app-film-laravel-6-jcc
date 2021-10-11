@@ -14,13 +14,13 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('/adminlte') }}/dist/css/adminlte.min.css">
 
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.css"> --}}
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
     @stack('style')
-    @include('sweet::alert')
 </head>
 
 <body class="hold-transition sidebar-mini">
+    @include('sweet::alert')
     <!-- Site wrapper -->
     <div class="wrapper">
         @include('template.navbar')
@@ -54,11 +54,11 @@
     <script src="{{ asset('/adminlte') }}/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="{{ asset('/adminlte') }}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    {{-- <script src="{{ asset('/adminlte') }}/plugins/bootstrap/js/bootstrap.js"></script> --}}
     <!-- AdminLTE App -->
     <script src="{{ asset('/adminlte') }}/dist/js/adminlte.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="adminlte/dist/js/demo.js"></script>
 
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script> --}}
     @stack('scripts')
 </body>
 

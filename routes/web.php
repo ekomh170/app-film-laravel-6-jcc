@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use UniSharp\LaravelFilemanager\Lfm;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,6 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route Tidak Terpakai
-// Route::get('/home', 'HomeController@index')->name('home');
-// Route Tidak Terpakai
 
 Route::get('/table', function () {
     return view('table');
@@ -30,6 +28,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+//     \UniSharp\LaravelFilemanager\Lfm::routes();
 Route::group(['middleware' => ['web']], function () {
     Route::get('/master', function () {
         return view('template.master');
@@ -40,4 +40,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::resource('genre', 'GenreController');
     Route::resource('peran', 'PeranController');
     Route::resource('profile', 'ProfileController')->only(['index', 'update', 'show']);
+
+
+    Route::get('film/view2', 'FilmController@index2');
+    Route::get('film/show2', 'FilmController@show2');
 });
