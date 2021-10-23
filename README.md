@@ -15,9 +15,63 @@ Aplikasi Film Sederhana Ini Adalah Aplikasi yang dikembangkan dari kumpulan mate
 -   Register<br>
 -   Logout<br>
 -   Halaman Utama<br>
--   etc<br><br>
+-   Data Lengkap Prorfile<br><br>
+-   Edit Prorfile<br><br>
+
+A.Data Pengguna Apps<br>
+
+-   Tambah Data (Pengguna Apps)<br>
+-   Ubah Data (Pengguna Apps)<br>
+-   Hapus Data (Pengguna Apps)<br>
+-   Detail Data (Pengguna Apps)<br>
+-   Cari Data (Pengguna Apps)<br><br>
+
+B. Data Menu Cast<br>
+
+-   Tambah Data (Menu Cast)<br>
+-   Ubah Data (Menu Cast)<br>
+-   Hapus Data (Menu Cast)<br>
+-   Detail Data (Menu Cast)<br>
+-   Cari Data (Menu Cast)<br><br>
+
+C. Data Menu Peran<br>
+
+-   Tambah Data (Menu Peran)<br>
+-   Ubah Data (Menu Peran)<br>
+-   Hapus Data (Menu Peran)<br>
+-   Detail Data (Menu Peran)<br>
+-   Cari Data (Menu Peran)<br><br>
+
+D. Data Menu Film<br>
+
+-   Tambah Data (Menu Film)<br>
+-   Ubah Data (Menu Film)<br>
+-   Hapus Data (Menu Film)<br>
+-   Detail Data (Menu Film)<br>
+-   Cari Data (Menu Film)<br><br>
+
+E. Data Menu Genre<br>
+
+-   Tambah Data (Menu Genre)<br>
+-   Ubah Data (Menu Genre)<br>
+-   Hapus Data (Menu Genre)<br>
+-   Detail Data (Menu Genre)<br>
+-   Cari Data (Menu Genre)<br><br>
+
+## Fitur Yang Akan Datang
+
+-   Tampilan Menu Film Kedua <br>
+-   Detail Tampilan Menu Film Kedua <br>
+-   Menambahkan Fitur Notifikasi Film Terbaru <br>
+-   Mengaktifkan Search All Data <br>
+
+<b>Notes :</b> Untuk Penambahan Fitur Tidak Dapat di Tentukan Waktunya<br>
 
 ## Aplikasi Screenshot
+
+<img src="public/assets_readme/Halaman_Utama.PNG" alt="Halaman Utama">
+<img src="public/assets_readme/Data_Film.PNG" alt="Data Film">
+<img src="public/assets_readme/Detail_Data_Film.PNG" alt="Data Film">
 
 ## Alat Yang Digunakan Untuk Membuat Web :
 

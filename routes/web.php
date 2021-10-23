@@ -42,6 +42,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::resource('profile', 'ProfileController')->only(['index', 'update', 'show']);
 
 
-    Route::get('film/view2', 'FilmController@index2');
-    Route::get('film/show2', 'FilmController@show2');
+    // Route::get('film/view2', 'FilmController@index2');
+    // Route::get('film/show2', 'FilmController@show2');
 });

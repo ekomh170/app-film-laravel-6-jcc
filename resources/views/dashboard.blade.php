@@ -6,8 +6,12 @@
 <h3>Selamat Datang</h3>
 <div class="mb-2">Dashboard adalah halaman berisi tentang ringkasan informasi.</div>
 <hr>
-<h4 class="mt-2">Latihan Materi | 18 Eloquent Relationships</h4>
-<div class="mb-3">Notes : Ini Adalah Sebuah Link Alternatif Menuju Menu:</div>
+<h4 class="mt-2">Aplikasi Informasi Film Sederhana</h4>
+<div class="mb-3">Aplikasi Informasi Film Sederhana Ini Adalah Aplikasi yang dikembangkan dari kumpulan materi saat
+    belajar materi laravel
+    di jabar coding camp lalu untuk beberapa fitur saya kembangkan lagi sendiri, walaupun saat masih tahap pengerjaan
+    karena
+    belum selesai.</div>
 <section class="content">
     <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
